@@ -1,4 +1,4 @@
-# Hi there, I'm Nguyen Pham Nhat Anh! 👋
+# Hi there, I'm Nguyen Pham Nhat Anh! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 I'm a 3rd-year Software Engineering student at FPT University HCMC (Expected Graduation: June 2027). I have a strong passion for **Backend Development**, **Cloud Infrastructure**, and designing software architectures that scale. 
 
