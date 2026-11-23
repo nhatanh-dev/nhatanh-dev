@@ -12,14 +12,24 @@
 
 </div>
 
-### About
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/section-about-dark.svg"/>
+  <img src="assets/section-about-light.svg" width="100%" alt="About"/>
+</picture>
 
 Final-year Software Engineering student at FPT University HCMC (graduating 06/2027), focused on backend development with **C# / ASP.NET Core**.
 Most of my work on team projects covers **payments & billing** (VNPay in three projects), **realtime** features with SignalR, **concurrency control**, and **async processing** with RabbitMQ and background workers.
 
 Currently co-building **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)** with a startup team, owning business logic and product workflows.
 
-### Featured projects
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/section-projects-dark.svg"/>
+  <img src="assets/section-projects-light.svg" width="100%" alt="Featured projects"/>
+</picture>
 
 | Project | Key contributions |
 |:--|:--|
@@ -28,13 +38,23 @@ Currently co-building **[Livento – AI Livestream Studio](https://studio.livent
 | **[SmartInvoice Shield](https://github.com/tuankiet18-dev/SMARTINVOICE-SHIELD)**<br/><sub>E-invoice SaaS with AI/OCR · .NET 9 · PostgreSQL · AWS</sub> | VNPay with subscription quotas, invoice management & audit log, permission-based RBAC, OCR pipeline integration |
 | **[EVoltStation](https://github.com/nhatanh-dev/EVStation-API)** · [demo](https://evoltstation.io.vn)<br/><sub>EV charging management · .NET 9 · SignalR · SQL Server</sub> | Realtime charging-session flow over SignalR, overstay fees & rule enforcement via background jobs, walk-in customer flow |
 
-### Tech stack
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/section-stack-dark.svg"/>
+  <img src="assets/section-stack-light.svg" width="100%" alt="Tech stack"/>
+</picture>
 
 <img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,rabbitmq,aws,docker,githubactions,react,ts,tailwind&perline=10" alt="Tech stack"/>
 
 `C#` `ASP.NET Core` `EF Core` `SignalR` · `PostgreSQL (pgvector)` `SQL Server` `RabbitMQ` · `AWS` `Docker` `GitHub Actions` · `React` `TypeScript`
 
-### Games & AI-assisted art
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/section-games-dark.svg"/>
+  <img src="assets/section-games-light.svg" width="100%" alt="Games & AI art"/>
+</picture>
 
 <table>
 <tr>
@@ -51,7 +71,12 @@ Currently co-building **[Livento – AI Livestream Studio](https://studio.livent
 </tr>
 </table>
 
-### Awards & activities
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/section-awards-dark.svg"/>
+  <img src="assets/section-awards-light.svg" width="100%" alt="Awards & activities"/>
+</picture>
 
 - 🏆 **Top 4 of 160 teams**, IT Consultant Challenge 2026 (Netcompany × Code Mely), team NEW AURA · [project](https://github.com/tuankiet18-dev/Nordic-Flow)
 - 🎓 **Honorable Student of the Trimester**, 4 terms, FPT University
