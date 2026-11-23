@@ -1,8 +1,8 @@
 <div align="center">
 
-<h1>Nguyen Pham Nhat Anh</h1>
+<img src="assets/header.svg" width="100%" alt="Nguyen Pham Nhat Anh - Backend Developer"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=900&color=0EA5E9&center=true&vCenter=true&width=560&lines=Backend+Developer+%C2%B7+C%23+%2F+.NET;Payments+%E2%80%A2+Realtime+%E2%80%A2+Concurrency;PostgreSQL+%C2%B7+SQL+Server+%C2%B7+RabbitMQ+%C2%B7+AWS;Final-year+SE+student+%40+FPT+University+HCMC" alt="Typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=900&color=0EA5E9&center=true&vCenter=true&width=560&lines=Payments+%E2%80%A2+Realtime+%E2%80%A2+Concurrency;PostgreSQL+%C2%B7+SQL+Server+%C2%B7+RabbitMQ+%C2%B7+AWS;Final-year+SE+student+%40+FPT+University+HCMC" alt="Typing intro"/>
 
 <p>
 <a href="https://anhnpn.vercel.app"><img src="https://img.shields.io/badge/Portfolio-anhnpn.vercel.app-0EA5E9?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
