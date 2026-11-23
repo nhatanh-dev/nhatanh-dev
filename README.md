@@ -1,80 +1,60 @@
-# Nguyễn Phạm Nhật Anh
+<div align="center">
 
-**Backend Developer · .NET** — Ho Chi Minh City, Vietnam
+<h1>Nguyen Pham Nhat Anh</h1>
 
-[Portfolio](https://anhnpn.vercel.app) · [LinkedIn](https://linkedin.com/in/anhnguyen2505) · [Email](mailto:anhnguyenphamnhat@gmail.com)
-
-```csharp
-var developer = new Developer
-{
-    Name      = "Nguyễn Phạm Nhật Anh",
-    Role      = "Backend Developer",
-    Education = "Software Engineering @ FPT University HCMC (06/2027)",
-    Stack     = ["C#", "ASP.NET Core", "PostgreSQL", "SQL Server", "RabbitMQ"],
-    FocusOn   = ["Payments & billing", "Realtime (SignalR)", "Concurrency", "Async processing"],
-    Currently = "Building Livento – AI Livestream Studio"
-};
-```
-
-## 👋 Giới thiệu
-
-Sinh viên năm cuối Kỹ thuật Phần mềm, định hướng Backend. Kinh nghiệm chính qua các dự án nhóm: tích hợp thanh toán & billing (VNPay trong 3 dự án), realtime với SignalR, kiểm soát truy cập đồng thời và xử lý bất đồng bộ (RabbitMQ, BackgroundService, transactional outbox). Có làm thêm frontend với **React** và triển khai bằng **Docker / AWS**.
-
-> 🚀 **Hiện tại:** cùng team khởi nghiệp phát triển **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)**, phụ trách nghiệp vụ và luồng xử lý của sản phẩm.
-
-## 🧩 Dự án nổi bật
-
-| Dự án | Đóng góp chính |
-|:--|:--|
-| 🚤 **[Smart Waterbus](https://github.com/minhvuong0909/waterbus-system)**<br/><sub>Đặt vé tàu buýt đường sông theo chặng</sub><br/>`.NET 8` `SQL Server` `SignalR` | Commercial backend: checkout, thanh toán & hoàn tiền VNPay (verify IPN, đối soát giao dịch); chống race condition bằng SQL Server app lock + `RowVersion`; transactional email outbox |
-| 📚 **[InsightVault AI](https://github.com/tuankiet18-dev/InsightVault-AI)**<br/><sub>Không gian tri thức cho team với RAG chat</sub><br/>`ASP.NET Core` `pgvector` `RabbitMQ` | Thiết kế kiến trúc backend; xử lý job AI bất đồng bộ qua RabbitMQ; billing & credit theo workspace (VNPay/PayOS); CI và deploy EC2 |
-| 🛡️ **[SmartInvoice Shield](https://github.com/tuankiet18-dev/SMARTINVOICE-SHIELD)**<br/><sub>SaaS quản lý hóa đơn điện tử, AI/OCR</sub><br/>`.NET 9` `PostgreSQL` `AWS` | Thanh toán VNPay & quota theo gói subscription; quản lý hóa đơn, audit log; phân quyền RBAC; tích hợp pipeline OCR |
-| ⚡ **[EVoltStation](https://github.com/nhatanh-dev/EVStation-API)** · [demo](https://evoltstation.io.vn)<br/><sub>Quản lý trạm sạc xe điện</sub><br/>`.NET 9` `SignalR` `SQL Server` | Luồng phiên sạc realtime qua SignalR; tính phí chiếm chỗ & xử lý vi phạm bằng background job; luồng khách vãng lai |
-
-## 🛠️ Tech stack
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3200&pause=900&color=0EA5E9&center=true&vCenter=true&width=560&lines=Backend+Developer+%C2%B7+C%23+%2F+.NET;Payments+%E2%80%A2+Realtime+%E2%80%A2+Concurrency;PostgreSQL+%C2%B7+SQL+Server+%C2%B7+RabbitMQ+%C2%B7+AWS;Final-year+SE+student+%40+FPT+University+HCMC" alt="Typing intro"/>
 
 <p>
-<img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,rabbitmq,aws,docker,githubactions,react,ts,tailwind&theme=dark" alt="tech stack"/>
+<a href="https://anhnpn.vercel.app"><img src="https://img.shields.io/badge/Portfolio-anhnpn.vercel.app-0EA5E9?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
+<a href="https://www.linkedin.com/in/annguyex/"><img src="https://img.shields.io/badge/LinkedIn-annguyex-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:anhnguyenphamnhat@gmail.com"><img src="https://img.shields.io/badge/Email-anhnguyenphamnhat@gmail.com-334155?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 </p>
 
-- **Backend:** C#, ASP.NET Core, Entity Framework Core, SignalR, REST API, BackgroundService
-- **Data & Messaging:** PostgreSQL (pgvector), SQL Server, RabbitMQ
-- **Cloud & DevOps:** AWS (EC2, RDS, S3, Cognito), Docker, GitHub Actions
-- **Frontend:** React, TypeScript, Tailwind CSS
+</div>
 
-## 🎮 Game & AI sáng tạo
+### About
 
-<a href="https://banyan-base-airisers.netlify.app/"><img src="assets/banyan-base.png" width="420" alt="Banyan Base"/></a>
+Final-year Software Engineering student at FPT University HCMC (graduating 06/2027), focused on backend development with **C# / ASP.NET Core**.
+Most of my work on team projects covers **payments & billing** (VNPay in three projects), **realtime** features with SignalR, **concurrency control**, and **async processing** with RabbitMQ and background workers.
 
-- **[Banyan Base: Cuội & Moxi](https://banyan-base-airisers.netlify.app/)**: game cho NASA Space Apps Challenge 2026 (team AI RISERS); phụ trách 3D asset, dựng bằng công cụ AI
-- **[Flood Route](https://github.com/nhatanh-dev/flood-route)**: game giải đố giải cứu lũ theo lượt, làm bằng Unity
+Currently co-building **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)** with a startup team, owning business logic and product workflows.
 
-## 🏅 Hoạt động & thành tích
-
-- 🎓 **Sinh viên Giỏi** 4 học kỳ, FPT University
-- ☁️ **AWS First Cloud AI Journey (FCAJ)**: chương trình thực hành AWS · [workshop](https://github.com/nhatanh-dev/FCAJ_Workshop)
-- 🚀 **NASA Space Apps Challenge 2026**, team AI RISERS
-- 📜 Chứng chỉ Coursera (Software Development Lifecycle, …): xem tại [portfolio](https://anhnpn.vercel.app)
-
-<details>
-<summary><b>🇬🇧 English version</b></summary>
-
-<br/>
-
-Final-year Software Engineering student at **FPT University HCMC** (expected 06/2027), aiming for a **Backend Developer** role with **C# / ASP.NET Core**, **PostgreSQL** and **SQL Server**.
-
-Main experience from team projects: payments & billing (VNPay in three projects), realtime with SignalR, concurrency control and async processing (RabbitMQ, BackgroundService, transactional outbox). Also builds frontends with **React** and deploys with **Docker / AWS**.
-
-**Currently** co-building **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)** with a startup team, owning business logic and product workflows.
+### Featured projects
 
 | Project | Key contributions |
 |:--|:--|
-| **Smart Waterbus** | Commercial backend: checkout, VNPay payment & refund (IPN verification, reconciliation), race-condition fixes with SQL Server app locks + `RowVersion`, transactional email outbox |
-| **InsightVault AI** | Backend architecture, RabbitMQ-based AI job processing, workspace billing & credits (VNPay/PayOS), CI and EC2 deployment |
-| **SmartInvoice Shield** | VNPay with subscription quotas, invoice management & audit log, RBAC, OCR pipeline integration |
-| **EVoltStation** | Realtime charging-session flow over SignalR, overstay fees & rule enforcement via background jobs, walk-in customer flow |
+| **[Smart Waterbus](https://github.com/minhvuong0909/waterbus-system)**<br/><sub>River-bus ticketing · .NET 8 · SQL Server · SignalR</sub> | Commercial backend: checkout, VNPay payment & refund (IPN verification, reconciliation), race-condition fixes with SQL Server app locks + `RowVersion`, transactional email outbox |
+| **[InsightVault AI](https://github.com/tuankiet18-dev/InsightVault-AI)**<br/><sub>Team knowledge base with RAG · ASP.NET Core · pgvector · RabbitMQ</sub> | Backend architecture, RabbitMQ-based AI job processing, workspace billing & credits (VNPay/PayOS), CI and EC2 deployment |
+| **[SmartInvoice Shield](https://github.com/tuankiet18-dev/SMARTINVOICE-SHIELD)**<br/><sub>E-invoice SaaS with AI/OCR · .NET 9 · PostgreSQL · AWS</sub> | VNPay with subscription quotas, invoice management & audit log, permission-based RBAC, OCR pipeline integration |
+| **[EVoltStation](https://github.com/nhatanh-dev/EVStation-API)** · [demo](https://evoltstation.io.vn)<br/><sub>EV charging management · .NET 9 · SignalR · SQL Server</sub> | Realtime charging-session flow over SignalR, overstay fees & rule enforcement via background jobs, walk-in customer flow |
 
-**Activities:** Excellent Student award (4 semesters) · AWS First Cloud AI Journey · NASA Space Apps Challenge 2026 · Coursera specializations
+### Tech stack
 
-</details>
+<img src="https://skillicons.dev/icons?i=cs,dotnet,postgres,rabbitmq,aws,docker,githubactions,react,ts,tailwind&perline=10" alt="Tech stack"/>
 
+`C#` `ASP.NET Core` `EF Core` `SignalR` · `PostgreSQL (pgvector)` `SQL Server` `RabbitMQ` · `AWS` `Docker` `GitHub Actions` · `React` `TypeScript`
+
+### Games & AI-assisted art
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/nhatanh-dev/flood-route"><img src="https://raw.githubusercontent.com/nhatanh-dev/flood-route/main/docs/media/02-boat-intro.png" alt="Flood Route"/></a>
+<b><a href="https://github.com/nhatanh-dev/flood-route">Flood Route</a></b><br/>
+<sub>3D flood-rescue game in Unity, built with AI across code, 3D models, art, music and voice</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://banyan-base-airisers.netlify.app/"><img src="assets/banyan-base.png" alt="Banyan Base"/></a>
+<b><a href="https://banyan-base-airisers.netlify.app/">Banyan Base: Cuội & Moxi</a></b><br/>
+<sub>NASA Space Apps Challenge 2026 game (team AI RISERS); 3D assets made with AI tools</sub>
+</td>
+</tr>
+</table>
+
+### Awards & activities
+
+- 🏆 **Top 4 of 160 teams**, IT Consultant Challenge 2026 (Netcompany × Code Mely), team NEW AURA · [project](https://github.com/tuankiet18-dev/Nordic-Flow)
+- 🎓 **Honorable Student of the Trimester**, 4 terms, FPT University
+- ☁️ **AWS First Cloud AI Journey (FCAJ)** hands-on program · [workshop](https://github.com/nhatanh-dev/FCAJ_Workshop)
+- 🚀 **NASA Space Apps Challenge 2026**, team AI RISERS
+- 📜 Coursera specializations, including Software Development Lifecycle · [certificates](https://anhnpn.vercel.app)
