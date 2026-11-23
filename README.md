@@ -12,22 +12,20 @@
 
 ## 👋 Giới thiệu
 
-Tui là **Nhật Anh**, sinh viên năm cuối Kỹ thuật Phần mềm tại **FPT University HCMC** (dự kiến tốt nghiệp 06/2027), định hướng **Backend Developer**.
+Sinh viên năm cuối Kỹ thuật Phần mềm tại **FPT University HCMC** (dự kiến tốt nghiệp 06/2027), định hướng **Backend Developer** với **C# / ASP.NET Core**, **PostgreSQL** và **SQL Server**.
 
-Trong các dự án nhóm, tui thường làm backend với **C# / ASP.NET Core**, **PostgreSQL** và **SQL Server**. Mảng tui làm nhiều nhất là thanh toán & billing (đã tích hợp VNPay ở 3 dự án), realtime với SignalR, xử lý đồng thời và xử lý bất đồng bộ (RabbitMQ, BackgroundService, transactional outbox). Ngoài ra tui làm frontend với **React** và triển khai trên **AWS / Docker**.
+Kinh nghiệm chính qua các dự án nhóm: tích hợp thanh toán & billing (VNPay trong 3 dự án), realtime với SignalR, kiểm soát truy cập đồng thời và xử lý bất đồng bộ (RabbitMQ, BackgroundService, transactional outbox). Có làm thêm frontend với **React** và triển khai bằng **Docker / AWS**.
 
-> 🚀 **Hiện tại:** cùng team khởi nghiệp xây dựng **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)**, tui phụ trách nghiệp vụ và luồng xử lý của sản phẩm.
+> 🚀 **Hiện tại:** cùng team khởi nghiệp phát triển **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)**, phụ trách nghiệp vụ và luồng xử lý của sản phẩm.
 
 ## 🧩 Dự án nổi bật
 
-| Dự án | Mô tả | Phần tui làm |
-|:--|:--|:--|
-| 🚤 **[Smart Waterbus](https://github.com/minhvuong0909/waterbus-system)** | Đặt vé tàu buýt đường sông theo chặng: thanh toán online, vé QR, soát vé offline, thuyết minh tự động trên tàu.<br/>`.NET 8` `SQL Server` `SignalR` `VNPay` | **Commercial backend:** checkout, thanh toán & hoàn tiền VNPay (verify IPN, đối soát `querydr`); chống race condition bằng SQL Server app lock + `RowVersion`; transactional email outbox; phát audio qua SignalR có ACK & fencing token |
-| 📚 **[InsightVault AI](https://github.com/tuankiet18-dev/InsightVault-AI)** | Không gian tri thức cho team: upload tài liệu, RAG chat, tóm tắt & so sánh, xuất báo cáo.<br/>`ASP.NET Core` `PostgreSQL + pgvector` `RabbitMQ` `MinIO` `Docker` | Thiết kế kiến trúc backend (Clean Architecture); xử lý job AI bất đồng bộ qua RabbitMQ + BackgroundService; billing theo workspace (trừ credit idempotent, VNPay/PayOS); CI và deploy EC2 (Docker Compose, Caddy HTTPS) |
-| 🛡️ **[SmartInvoice Shield](https://github.com/tuankiet18-dev/SMARTINVOICE-SHIELD)** | SaaS multi-tenant quản lý hóa đơn điện tử: trích xuất AI/OCR, đánh giá rủi ro thuế.<br/>`.NET 9` `PostgreSQL` `React` `AWS` | Tích hợp VNPay + gói subscription/quota; quản lý hóa đơn (soft delete, audit log, export Excel); RBAC theo permission; nối pipeline OCR (validate XSD, Gemini có retry + xoay API key) |
-| ⚡ **[EVoltStation](https://github.com/nhatanh-dev/EVStation-API)** · [demo](https://evoltstation.io.vn) | Quản lý trạm sạc xe điện: đặt chỗ, sạc bằng QR, ví điện tử, giám sát realtime.<br/>`.NET 9` `SignalR` `SQL Server` | Luồng phiên sạc lõi + SignalR hub đẩy pin, chi phí, thời gian còn lại; phí chiếm chỗ, nợ tài xế, tự động ban/unban bằng BackgroundService; luồng tài xế vãng lai |
-
-<sub>Các dự án nhóm nằm ở repo của thành viên khác; link dẫn tới repo gốc, nơi có lịch sử commit của tui.</sub>
+| Dự án | Đóng góp chính |
+|:--|:--|
+| 🚤 **[Smart Waterbus](https://github.com/minhvuong0909/waterbus-system)**<br/><sub>Đặt vé tàu buýt đường sông theo chặng</sub><br/>`.NET 8` `SQL Server` `SignalR` | Commercial backend: checkout, thanh toán & hoàn tiền VNPay (verify IPN, đối soát giao dịch); chống race condition bằng SQL Server app lock + `RowVersion`; transactional email outbox |
+| 📚 **[InsightVault AI](https://github.com/tuankiet18-dev/InsightVault-AI)**<br/><sub>Không gian tri thức cho team với RAG chat</sub><br/>`ASP.NET Core` `pgvector` `RabbitMQ` | Thiết kế kiến trúc backend; xử lý job AI bất đồng bộ qua RabbitMQ; billing & credit theo workspace (VNPay/PayOS); CI và deploy EC2 |
+| 🛡️ **[SmartInvoice Shield](https://github.com/tuankiet18-dev/SMARTINVOICE-SHIELD)**<br/><sub>SaaS quản lý hóa đơn điện tử, AI/OCR</sub><br/>`.NET 9` `PostgreSQL` `AWS` | Thanh toán VNPay & quota theo gói subscription; quản lý hóa đơn, audit log; phân quyền RBAC; tích hợp pipeline OCR |
+| ⚡ **[EVoltStation](https://github.com/nhatanh-dev/EVStation-API)** · [demo](https://evoltstation.io.vn)<br/><sub>Quản lý trạm sạc xe điện</sub><br/>`.NET 9` `SignalR` `SQL Server` | Luồng phiên sạc realtime qua SignalR; tính phí chiếm chỗ & xử lý vi phạm bằng background job; luồng khách vãng lai |
 
 ## 🛠️ Tech stack
 
@@ -44,7 +42,7 @@ Trong các dự án nhóm, tui thường làm backend với **C# / ASP.NET Core*
 
 <a href="https://banyan-base-airisers.netlify.app/"><img src="assets/banyan-base.png" width="420" alt="Banyan Base"/></a>
 
-- **[Banyan Base: Cuội & Moxi](https://banyan-base-airisers.netlify.app/)**: game cho NASA Space Apps Challenge 2026 (team AI RISERS), tui phụ trách dựng 3D asset bằng công cụ AI
+- **[Banyan Base: Cuội & Moxi](https://banyan-base-airisers.netlify.app/)**: game cho NASA Space Apps Challenge 2026 (team AI RISERS); phụ trách 3D asset, dựng bằng công cụ AI
 - **[Flood Route](https://github.com/nhatanh-dev/flood-route)**: game giải đố giải cứu lũ theo lượt, làm bằng Unity
 
 ## 🏅 Hoạt động & thành tích
@@ -52,25 +50,25 @@ Trong các dự án nhóm, tui thường làm backend với **C# / ASP.NET Core*
 - 🎓 **Sinh viên Giỏi** 4 học kỳ, FPT University
 - ☁️ **AWS First Cloud AI Journey (FCAJ)**: chương trình thực hành AWS · [workshop](https://github.com/nhatanh-dev/FCAJ_Workshop)
 - 🚀 **NASA Space Apps Challenge 2026**, team AI RISERS
-- 📜 Các chứng chỉ Coursera (Software Development Lifecycle, …): xem tại [portfolio](https://anhnpn.vercel.app)
+- 📜 Chứng chỉ Coursera (Software Development Lifecycle, …): xem tại [portfolio](https://anhnpn.vercel.app)
 
 <details>
 <summary><b>🇬🇧 English version</b></summary>
 
 <br/>
 
-I'm **Nhat Anh**, a final-year Software Engineering student at **FPT University HCMC** (expected 06/2027), focused on **backend development**.
+Final-year Software Engineering student at **FPT University HCMC** (expected 06/2027), aiming for a **Backend Developer** role with **C# / ASP.NET Core**, **PostgreSQL** and **SQL Server**.
 
-On team projects I usually own backend work in **C# / ASP.NET Core** with **PostgreSQL** and **SQL Server**. Most of it falls into four areas: payments & billing (VNPay integrated in three projects), realtime with SignalR, concurrency control, and async processing (RabbitMQ, BackgroundService, transactional outbox). I also build frontends with **React** and deploy with **AWS / Docker**.
+Main experience from team projects: payments & billing (VNPay in three projects), realtime with SignalR, concurrency control and async processing (RabbitMQ, BackgroundService, transactional outbox). Also builds frontends with **React** and deploys with **Docker / AWS**.
 
-**Currently:** co-building **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)** with my startup team, where I own the business logic and workflows.
+**Currently** co-building **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)** with a startup team, owning business logic and product workflows.
 
-**Featured projects**
-
-- **Smart Waterbus**: commercial backend. Checkout, VNPay payment & refund (signed IPN verification, `querydr` reconciliation), race-condition fixes with SQL Server app locks + `RowVersion`, transactional email outbox, and SignalR audio dispatch with ACK & fencing tokens.
-- **InsightVault AI**: designed the backend architecture (Clean Architecture, EF Core + pgvector), RabbitMQ-based AI job processing, workspace billing with idempotent credit consumption (VNPay/PayOS), CI and EC2 deployment.
-- **SmartInvoice Shield**: VNPay with subscription/quota rules, invoice management (soft delete, audit log, Excel export), permission-based RBAC, and OCR pipeline integration (XSD validation, Gemini with retry & key rotation).
-- **EVoltStation**: core charging-session flow with a SignalR hub streaming live battery, cost and time remaining; overstay fees, driver debt and auto ban/unban via BackgroundService workers.
+| Project | Key contributions |
+|:--|:--|
+| **Smart Waterbus** | Commercial backend: checkout, VNPay payment & refund (IPN verification, reconciliation), race-condition fixes with SQL Server app locks + `RowVersion`, transactional email outbox |
+| **InsightVault AI** | Backend architecture, RabbitMQ-based AI job processing, workspace billing & credits (VNPay/PayOS), CI and EC2 deployment |
+| **SmartInvoice Shield** | VNPay with subscription quotas, invoice management & audit log, RBAC, OCR pipeline integration |
+| **EVoltStation** | Realtime charging-session flow over SignalR, overstay fees & rule enforcement via background jobs, walk-in customer flow |
 
 **Activities:** Excellent Student award (4 semesters) · AWS First Cloud AI Journey · NASA Space Apps Challenge 2026 · Coursera specializations
 
