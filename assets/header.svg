@@ -1,91 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Nguyen Pham Nhat Anh - Backend Developer">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#111c33"/>
-    </linearGradient>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#38bdf8" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
-    </linearGradient>
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" fill="none" stroke="#1e293b" stroke-width="1"/>
-    </pattern>
-    <clipPath id="card"><rect x="10" y="10" width="1180" height="280" rx="18"/></clipPath>
-    <clipPath id="typeClip"><rect x="60" y="78" width="0" height="34">
-      <animate attributeName="width" from="0" to="402" begin="0.3s" dur="1.6s" fill="freeze" calcMode="discrete" values="0;40;80;121;161;201;241;281;322;362;402" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"/>
-    </rect></clipPath>
     <style>
-      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
-      .sans { font-family: "Segoe UI", -apple-system, Helvetica, Arial, sans-serif; }
-      .fade1 { opacity: 0; animation: fadeUp .8s ease-out 2.0s forwards; }
-      .fade2 { opacity: 0; animation: fadeUp .8s ease-out 2.5s forwards; }
-      .fade3 { opacity: 0; animation: fadeUp .8s ease-out 3.0s forwards; }
-      .graph { opacity: 0; animation: fade 1.2s ease-out 1.0s forwards; }
-      .cursor { animation: blink 1s step-end infinite; }
-      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-      .p2 { animation-delay: .8s; } .p3 { animation-delay: 1.6s; }
-      @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      @font-face { font-family: "AntonS"; src: url(data:font/woff2;base64,d09GMgABAAAAAAwkABEAAAAAGKgAAAvJAAIdsgAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbgSwcKgZgAHQIgT4JnAwRCAqKHIh4ATYCJAM0CxwABCAFBgcgDIFhG74WUZSPVpbiiwTzUPyNf7Qz4TrJ1ZYzKaWHYxqfjZBk1n/CuXp/LMk0qWBarohJcS9rhXUHTlSd/IcF6H8Adt3wfNpSoOkTVuArP3yjDZBhQzpK2GYpKPnWV9Qu6u2qp7Ud8DPb64yBcKXxnGFfURnuJL9dIwVo74P6pCnTlamq+P+/Ztp3//xllVO1ssjCANp1bvIDgwtJFiZTTLJEkxKhRIWwACQb2Va46mpfqyuE6iKepbYUPhbxcHbWZi50YTYQABsIMxA19FiDHG06SsHaOvrG4N44s3Mz3BAA8K6xz4ZV2zfDBKBMCLDJDBr7GPYOFyHCJhhhYOHjFSObWFOKRvAzK1/0eRh5oVAIXBxk6DG4YNFgc4MIInVpaC/DWTORnRJ3SNe94FfTiZCALBPPATh79iLsOazmh8JflzCqzav27MSD8GPKWvffMsBVzy5GZsp31YdRPzgYNRBOjQIHTRKYNrxCd+1HIZrRji4MYAjjmGLST3J1op+N/R9w73nQfe51pzvc6qYInVkaB9XXAhQCswCFCdW+Q8UBKnvhR1CkbqnHpW6pbXwoSoguA7E/vKDUcIv6WX4LI///iw8eut/iTy7ITS8v3Ap28zaMan5r+b+xO7+zjPmZ+T8GQMB7GEaRj/8w8/wR9fotUL5J9pc0lXb8M8zzf1PGpDvRA2Mt+AKogw4qTN5BwF+mDga1ah0c0hzzpXMzvk8kJSVf2FLfl4xBwrhzJNgGYz83iKejjg0MMHnS+lcsydm5l2fPr4h1qO8idXGhKQVP4TB2MTpwLYk4HolmiEqIYZ9uokYa4cGhRfWty9ZpDidDVA4W7nHre9hxmjYUGHrqaEEbpHpeXf0lSvEjuSGb+iB5iRXrxXh6sJ5MpT26rZDWUlv3I3Q9Z5VUaaUYNzqBOTYn4CWA21SzTdVQlhKfcpv/eWWC6+GflE6MTY5QjFEMit+DGKqPDgkZCsJzIxjcCBjmMc0bazdjxaGkLjOKlcXoeKERXJuGCzG2UEVHkEd2JjGU1v/3Ro2leNgR1WZIGyZvxaDRRiH4GqBolON7UHMOA1jsdRjQNpkdW+ZVgPkM60yhrtsD48hhQVhuwM3JPyEdAdIOlkgZSoOgLY3OmhEO/X1rP+Q63J5M+6yeKSogwpMM20ArjcyD2NRLHf5NgnKz4L5mDi46F+eQAOmnwFEjcgu+EnbsTMlg3gjWqI33rcODwgYyK9uBwwuoiODhh2PceaX5iBfCC7wRhw/WI5t25Z+Qbhto8TFJOx0KeY603Qh83AlF9AbxJk5fj9oUWbwZPm7nAWO1FDlrFAoW+rtqBOwcaj2+GAFh7osngrcxaEUF7huhSDEPQe326HB5xHtkddsPmAZFzA08VXnEw7GSiXt0BJ0diya7LJBFHUAEdUeqZcKiMVMwkHcCEeZliNs8jqGKl/Q3bm1W5mfOzHjv1UBR/YbaEjUWOSZu3oiOGBQs9xyxBSOKY4ziGacEJiiRSUpiipKZQSnMpFRmbcqDGqFRVPm4E1Qq6Mdr5lZHPk1KDP+9bEFKJv/zyvyYwROFLYba01z4hwmJNATsg4AAAtIRkIGATARkISAbATkIyEWIFUJqu6UiZyKuSF+rRl+zUSoUOm5eMVbUqD/NkaMEImMxaVTzir69HztONyqgUm8WLe6R7HZNUXJUpC4Pw8MoqlkmpWNHxsohz9jfWIEZ/yz55rtDkSFB7BQrJxARSa90pZTrssCvpBJSy1gIC1D+QY4qVBdqR/WGCMTJ1k+tQWGycksqGQPzMH/fHn1pY80SDoyNkPmuWnX57H1HLcAKseYRjnDq9ost57jYO2wLTaRuq9EK6kJSpbWCMr/HFqbfWXYNPodjERaDgV1UixvRexU0pQ3ss3SU5J0IE0G853k/mxoQTI0imRtjCWZpS6bmiDvDWeWk60pHecUomiOYo3nXVZNEuvqajrVUvDDSM/LsMKL6l3ThGoe+99NDbiyNjnqFzCciyMrSemUipSGERqkjLK4WpsxpRHh48qq7TfAWKqnVGtjaZkFqJIzy1mnvv8F4dXlUl/eZTDfLz2lqhQn8lezu6C/T2K/pyiBUKlXKoP1Yhg2zFYPUsSrFutRbWb4565bZOHvLCce877lbQW28tn4bqIut3wpHu8a2eoMDxYriM2oPYcVJzUr91RnbvASEnaq6WSKVrtzi7EDRQ+7xCbfsv2LsykIw8W72eK0rxjpNgY3MUucmHPdUo3W1ZFtgNRYiHSYJdJvLL/5gh9e5emaYWnm0Kj3lvSjQWoAqFukDNRn1t4aVoUolozbQqiw4ALsO0F9xDKKDXAgMMaXhdBKMMNVHkbhkY8Kn8XQSTDDdMoljWFALWUlpKoMEiyTVF7dM2RKmbClTtoypHr4ZmU0jsxlkthxZX4HEFVuJK6zywLRaImMNc0jSWiRpHZK0HknagCRtRJI2IUmbkeq2oOBUj8ZWKEBQ8W1o1rfL3hOgRd3RNwmZys4kknYlEe0uwtnZ2MPPsJefmbMLaKE5EIJ8XjTmvj5atP1CSo39eY0DeI0DeY2DeI2DeY1DeI1DUxocxhsczhscwRscyRscxRsczZvYMfjn+n47etRmJwYGc1BrbIy+h9mH7ynf0N6PbKPgf4LoQh506Q5SE5AagXmuAciL1gTA1kGCgeJDgTAEJ+MzhZ1mO9qxzChLuOZ9s3Nhe2942ez8krElTrMBz6y9SIfCrjlNYsxmziixM8dKeYhzzGtvwaaDXtdHvwp14GuuY94g0twx9cSrrnlHuKQzaxtaHSXyCmuvPWf282YNJpdQDR3z2ms48NVXtRbGDXGeqkftau5jenbm6Ndp3jEPfO2hsfoIV61NeX4AjpxzloadvaKTO2wA6sPl4FuJUa1XJYwZt9378XOigfTLzoU896PnWl4eDLYiRV/+4bje/WF/XOKr0YmF5ReKVw7w5m//QQ+OLZrs6+07Zdtk0Z2e2aQ/vvvm+47v9D0WOrcmpa+kIXO4ZLwzPVRZnR7q/mdZ8fV0XN0piy+5J65ctuvyXctm0ZTLU7KWd4uz2kqs8pJk3UTLr/alv9bOyl9/JTvW60Bv75iIC7n41q3pK9/lpZOvPqj7h8svbPj2/INOPuGu384uz9u0YWXuxqGsvM8gj39phI28VAw47VPPuy/8/iOkNfFPvjVUlp1Tag7n/zPh1B/prumBVt+p5y2dGX1+9yW+Q89rDUznrs6NB4Bgqe3SlmkozqgPAONga8CJ+CQ4p7Ag4jQIeNxKgoP7pIrNC+ZoEqA+CDASbC2Ahn7JGVEjDQCWCQOGz+dTOj4vmA8GLhhfAyKEN7QLIWRYkZSNcgCAC+u+qGNDJ+b13pg6FLotlSCoL7GAoU71yOo8mAnGFWfboSCFkmuYTJ2B3nrqtzBjmAxow0DiCVJ51nWpA+NrDebhNxhGox8yKUzY1FQwlpCSnJSYEB8T5XG0pQT85Ld0TF4wHQTBSaxhJOqLKsk4b+RiytNLu0zOGaiPAlK0bNbIStV+UiN8ltIJVE1jyzCZJbOwBYvpUsHl2eAgVkPrIIRfIAkdjY70OMfmZaYJilskhRFAYbhFNj3PZywm7TROiG3AGJYLkRsneD0uSwpEUqQU81G/IYiDQk5JnAkzIkLcFoxBRMzrEB7HSeX6F4IAsOSbjcDdx4Y99b+ZHhMA8M7CywOAL3IefQd64Ud5tfoRgAIDABDwz2Ce/HMlFa47gNA15PD/McA/RgrvLeyPEATlE3dD+5doT4DucxHFn0YNPxmaXkUVfXi6Aw7SIGlPAEMxpnEcgDPcti8YkfhL4v/nWo2u+d478eRI6Cai46dupC+knW29CUbLHUvRUYmAQi7UY9A9avSKOrNIZYlEpfRak4vkIGtVFSKPpQlvIE7LA9GIhAc2NAxAwcUp8lIEe+F3ehc40HZTOh05HLoxeGQIpJUs277TRCzoolOJN2Wl9e42DwSJ5cIVY+uiG0fQPS77WYMqETksWSh37p20cNjiuJvYXPwtcqVCWxsA) format("woff2"); }
+      @font-face { font-family: "JBMS"; src: url(data:font/woff2;base64,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) format("woff2"); }
+      @font-face { font-family: "InterS"; src: url(data:font/woff2;base64,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) format("woff2"); }
+      .display { font-family: "AntonS", Impact, "Arial Narrow Bold", sans-serif; font-size: 84px; }
+      .mono { font-family: "JBMS", ui-monospace, Menlo, Consolas, monospace; font-size: 14px; letter-spacing: 2.4px; }
+      .tag { font-family: "InterS", "Segoe UI", Helvetica, Arial, sans-serif; font-size: 23px; font-weight: 600; }
+      .up1 { transform: translateY(100px); animation: up .9s cubic-bezier(.2,.8,.2,1) .25s forwards; }
+      .up2 { transform: translateY(100px); animation: up .9s cubic-bezier(.2,.8,.2,1) .5s forwards; }
+      .f0 { opacity: 0; animation: fade .7s ease-out .05s forwards; }
+      .f1 { opacity: 0; animation: fade .8s ease-out 1.15s forwards; }
+      .f2 { opacity: 0; animation: fade .8s ease-out 1.45s forwards; }
+      .bar { transform: scaleY(0); transform-box: fill-box; transform-origin: top; animation: grow .6s ease-out 1.0s forwards; }
+      .slab { transform: translateX(260px); opacity: 0; animation: slide 1.1s cubic-bezier(.2,.8,.2,1) .35s forwards; }
+      .dot { animation: pulse 2.6s ease-in-out 2s infinite; }
+      @keyframes up { to { transform: translateY(0); } }
       @keyframes fade { to { opacity: 1; } }
-      @keyframes blink { 50% { opacity: 0; } }
-      @keyframes pulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.18); } }
+      @keyframes grow { to { transform: scaleY(1); } }
+      @keyframes slide { to { transform: translateX(0); opacity: 1; } }
+      @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
     </style>
+    <clipPath id="card"><rect x="0" y="0" width="1200" height="300" rx="20"/></clipPath>
+    <clipPath id="l1"><rect x="40" y="70" width="560" height="86"/></clipPath>
+    <clipPath id="l2"><rect x="40" y="156" width="560" height="90"/></clipPath>
   </defs>
 
   <g clip-path="url(#card)">
-    <rect x="10" y="10" width="1180" height="280" fill="url(#bg)"/>
-    <rect x="10" y="10" width="1180" height="280" fill="url(#grid)" opacity="0.55"/>
-    <!-- light sweep along the bottom edge -->
-    <rect x="-300" y="286" width="300" height="4" fill="url(#sweep)">
-      <animate attributeName="x" from="-300" to="1200" dur="5s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <rect x="10.5" y="10.5" width="1179" height="279" rx="18" fill="none" stroke="#1f2a44"/>
-
-  <!-- window bar -->
-  <circle cx="44" cy="40" r="6" fill="#f87171"/>
-  <circle cx="64" cy="40" r="6" fill="#fbbf24"/>
-  <circle cx="84" cy="40" r="6" fill="#34d399"/>
-  <text x="600" y="45" text-anchor="middle" class="mono" font-size="14" fill="#64748b">~/nhatanh-dev</text>
-
-  <!-- typed command -->
-  <g clip-path="url(#typeClip)">
-    <text x="60" y="104" class="mono" font-size="22" fill="#94a3b8"><tspan fill="#34d399">$</tspan> dotnet run --project <tspan fill="#38bdf8">NhatAnh</tspan></text>
-  </g>
-  <rect x="62" y="84" width="12" height="24" fill="#38bdf8" class="cursor">
-    <animate attributeName="x" from="62" to="466" begin="0.3s" dur="1.6s" fill="freeze" calcMode="discrete" values="62;102;142;183;223;263;303;343;384;424;466" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.6;0.7;0.8;0.9;1"/>
-  </rect>
-
-  <!-- output -->
-  <text x="60" y="170" class="sans fade1" font-size="50" font-weight="700" fill="#f1f5f9">Nguyen Pham Nhat Anh</text>
-  <text x="62" y="212" class="mono fade2" font-size="20" fill="#38bdf8">Backend Developer <tspan fill="#475569">·</tspan> <tspan fill="#cbd5e1">C# / ASP.NET Core</tspan></text>
-  <text x="62" y="250" class="mono fade3" font-size="16" fill="#64748b"><tspan fill="#34d399">info:</tspan> Application started. Listening on Ho Chi Minh City, Vietnam</text>
-
-  <!-- service graph -->
-  <g class="graph">
-    <g stroke="#1e3a5f" stroke-width="2" fill="none">
-      <path id="e1" d="M840 100 L960 150"/>
-      <path id="e2" d="M840 210 L960 150"/>
-      <path id="e3" d="M960 150 L1090 95"/>
-      <path id="e4" d="M960 150 L1090 205"/>
-    </g>
-    <circle r="4" fill="#38bdf8"><animateMotion dur="2.2s" repeatCount="indefinite"><mpath href="#e1"/></animateMotion></circle>
-    <circle r="4" fill="#34d399"><animateMotion dur="2.6s" begin="0.7s" repeatCount="indefinite"><mpath href="#e2"/></animateMotion></circle>
-    <circle r="4" fill="#38bdf8"><animateMotion dur="2.0s" begin="0.4s" repeatCount="indefinite"><mpath href="#e3"/></animateMotion></circle>
-    <circle r="4" fill="#fbbf24"><animateMotion dur="2.4s" begin="1.1s" repeatCount="indefinite"><mpath href="#e4"/></animateMotion></circle>
-
-    <g class="mono" font-size="12" text-anchor="middle">
-      <rect x="790" y="82" width="100" height="36" rx="8" fill="#0f2742" stroke="#38bdf8" class="pulse"/>
-      <text x="840" y="105" fill="#e2e8f0">client</text>
-      <rect x="790" y="192" width="100" height="36" rx="8" fill="#0f2742" stroke="#34d399" class="pulse p2"/>
-      <text x="840" y="215" fill="#e2e8f0">signalr</text>
-      <rect x="905" y="128" width="110" height="44" rx="10" fill="#132f52" stroke="#7dd3fc"/>
-      <text x="960" y="155" fill="#f8fafc" font-size="13">ASP.NET API</text>
-      <rect x="1040" y="77" width="100" height="36" rx="8" fill="#0f2742" stroke="#38bdf8" class="pulse p3"/>
-      <text x="1090" y="100" fill="#e2e8f0">postgres</text>
-      <rect x="1040" y="187" width="100" height="36" rx="8" fill="#0f2742" stroke="#fbbf24" class="pulse"/>
-      <text x="1090" y="210" fill="#e2e8f0">rabbitmq</text>
+    <rect width="1200" height="300" fill="#F5F0E8"/>
+    <!-- slanted accent slab, echoing the portfolio -->
+    <g class="slab">
+      <polygon points="1062,300 1098,150 1200,136 1200,300" fill="#C8341F"/>
+      <polygon points="1136,300 1158,214 1200,208 1200,300" fill="#8F2312" opacity=".55"/>
     </g>
   </g>
+  <rect x=".5" y=".5" width="1199" height="299" rx="20" fill="none" stroke="#16181F" stroke-opacity=".12"/>
+
+  <!-- top labels -->
+  <text x="56" y="50" class="mono f0" fill="#6B6A68"><tspan fill="#16181F">NHATANH-DEV</tspan> <tspan fill="#C8341F">·</tspan> BACKEND DEVELOPER</text>
+  <text x="1144" y="50" text-anchor="end" class="mono f0" fill="#6B6A68">HO CHI MINH CITY, VN</text>
+
+  <!-- name -->
+  <g clip-path="url(#l1)"><text x="52" y="150" class="display up1" fill="#16181F">NGUYEN PHAM</text></g>
+  <g clip-path="url(#l2)">
+    <g class="up2">
+      <g transform="translate(56,236) skewX(-11)">
+        <text x="0" y="0" class="display" fill="#C8341F">NHAT ANH</text>
+        <text x="302" y="0" class="display dot" fill="#C8341F">.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- tagline -->
+  <rect x="640" y="132" width="4" height="62" fill="#C8341F" class="bar"/>
+  <text x="662" y="157" class="tag f1" fill="#16181F">Building reliable systems</text>
+  <text x="662" y="187" class="tag f1" fill="#16181F">that solve real-world problems.</text>
+
+  <!-- focus chips -->
+  <text x="642" y="236" class="mono f2" fill="#6B6A68">.NET   PAYMENTS   REAL-TIME   CONCURRENCY</text>
 </svg>
