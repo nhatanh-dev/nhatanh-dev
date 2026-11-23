@@ -1,20 +1,24 @@
-<div align="center">
+# Nguyễn Phạm Nhật Anh
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Nguy%E1%BB%85n%20Ph%E1%BA%A1m%20Nh%E1%BA%ADt%20Anh&fontSize=40&fontColor=ffffff&fontAlignY=36&desc=Backend%20Developer%20%C2%B7%20.NET%20%C2%B7%20PostgreSQL%20%C2%B7%20AWS&descSize=17&descAlignY=58" width="100%" alt="banner"/>
+**Backend Developer · .NET** — Ho Chi Minh City, Vietnam
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=2C5364&center=true&vCenter=true&width=520&lines=Realtime+%E2%80%A2+Payment+%E2%80%A2+Concurrency;C%23+%2F+ASP.NET+Core+%2B+PostgreSQL+%2B+RabbitMQ;Final-year+SE+student+%40+FPT+University+HCMC" alt="typing"/>
+[Portfolio](https://anhnpn.vercel.app) · [LinkedIn](https://linkedin.com/in/anhnguyen2505) · [Email](mailto:anhnguyenphamnhat@gmail.com)
 
-<a href="https://anhnpn.vercel.app"><img src="https://img.shields.io/badge/Portfolio-2c5364?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://linkedin.com/in/anhnguyen2505"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:anhnguyenphamnhat@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-
-</div>
+```csharp
+var developer = new Developer
+{
+    Name      = "Nguyễn Phạm Nhật Anh",
+    Role      = "Backend Developer",
+    Education = "Software Engineering @ FPT University HCMC (06/2027)",
+    Stack     = ["C#", "ASP.NET Core", "PostgreSQL", "SQL Server", "RabbitMQ"],
+    FocusOn   = ["Payments & billing", "Realtime (SignalR)", "Concurrency", "Async processing"],
+    Currently = "Building Livento – AI Livestream Studio"
+};
+```
 
 ## 👋 Giới thiệu
 
-Sinh viên năm cuối Kỹ thuật Phần mềm tại **FPT University HCMC** (dự kiến tốt nghiệp 06/2027), định hướng **Backend Developer** với **C# / ASP.NET Core**, **PostgreSQL** và **SQL Server**.
-
-Kinh nghiệm chính qua các dự án nhóm: tích hợp thanh toán & billing (VNPay trong 3 dự án), realtime với SignalR, kiểm soát truy cập đồng thời và xử lý bất đồng bộ (RabbitMQ, BackgroundService, transactional outbox). Có làm thêm frontend với **React** và triển khai bằng **Docker / AWS**.
+Sinh viên năm cuối Kỹ thuật Phần mềm, định hướng Backend. Kinh nghiệm chính qua các dự án nhóm: tích hợp thanh toán & billing (VNPay trong 3 dự án), realtime với SignalR, kiểm soát truy cập đồng thời và xử lý bất đồng bộ (RabbitMQ, BackgroundService, transactional outbox). Có làm thêm frontend với **React** và triển khai bằng **Docker / AWS**.
 
 > 🚀 **Hiện tại:** cùng team khởi nghiệp phát triển **[Livento – AI Livestream Studio](https://studio.livento.id.vn/)**, phụ trách nghiệp vụ và luồng xử lý của sản phẩm.
 
@@ -74,4 +78,3 @@ Main experience from team projects: payments & billing (VNPay in three projects)
 
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=100&section=footer" width="100%" alt="footer"/>
